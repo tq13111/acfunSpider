@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.20">
+    <root id="1">
+      <ServerVersion>5.0.5</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="config"/>
+    <schema id="4" parent="1" name="local"/>
+    <schema id="5" parent="1" name="test">
+      <Current>1</Current>
+    </schema>
+    <table id="6" parent="5" name="contents"/>
+    <table id="7" parent="5" name="spiderservices"/>
+    <table id="8" parent="5" name="subs"/>
+    <table id="9" parent="5" name="users"/>
+    <column id="10" parent="7" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="11" parent="7" name="contentList">
+      <DataType>map(0)|4999544s</DataType>
+    </column>
+    <column id="12" parent="7" name="status">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="13" parent="7" name="validationUrl">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="14" parent="7" name="__v">
+      <Position>1</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="15" parent="7" name="contentList.frequencyLimit">
+      <Position>1</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="16" parent="7" name="contentList.pageSizeLimit">
+      <Position>2</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="17" parent="7" name="contentList.url">
+      <Position>3</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="18" parent="7" name="name">
+      <Position>4</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="19" parent="9" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="20" parent="9" name="__v">
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="21" parent="9" name="name">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="22" parent="9" name="username">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="23" parent="9" name="age">
+      <Position>1</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="24" parent="9" name="password">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>
